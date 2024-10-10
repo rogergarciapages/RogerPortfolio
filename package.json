@@ -49,6 +49,10 @@
     "tailwindcss": "^3.3.6"
   },
   "dependencies": {
+    "@fontsource-variable/inter-tight": "^5.1.0",
+    "@fontsource/inter-tight": "^5.1.0",
+    "@tabler/icons": "^3.19.0",
+    "@tabler/icons-react": "^3.19.0",
     "astro-boilerplate-components": "^1.0.16",
     "date-fns": "^2.30.0",
     "react": "^18.2.0",

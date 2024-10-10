@@ -5,7 +5,11 @@ module.exports = {
     './node_modules/astro-boilerplate-components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter Tight', 'sans-serif'], // Add Inter Tight here
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),

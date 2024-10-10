@@ -1,64 +1,45 @@
-import {
-  GradientText,
-  HeroAvatar,
-  HeroSocial,
-  Section,
-} from 'astro-boilerplate-components';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react'; // Import Tabler Icons
+import { HeroAvatar, Section } from 'astro-boilerplate-components';
 
 const Hero = () => (
   <Section>
     <HeroAvatar
-      title={
-        <>
-          Hi there, I'm <GradientText>Ixartz</GradientText> 👋
-        </>
-      }
+      title={<>Hello I'm Roger 👋</>}
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
-          </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+          I am SEO, Data Analyst and Revenue Manager based in Tenerife.
+          Passionate developer using Python and NextJs.
         </>
       }
       avatar={
         <img
-          className="h-80 w-64"
-          src="/assets/images/avatar.svg"
-          alt="Avatar image"
+          className="h-60 w-60"
+          src="/assets/images/rogergarcia.webp"
+          alt="Roger Garcia"
           loading="lazy"
         />
       }
       socialButtons={
         <>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/twitter-icon.png"
-              alt="Twitter icon"
-            />
+          {/* LinkedIn Button */}
+          <a
+            href="https://www.linkedin.com/in/roger-garcia-pages/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mr-4"
+          >
+            <IconBrandLinkedin className="h-16 w-16 hover:text-cyan-600" />{' '}
+            {/* Adjust size and color */}
           </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/facebook-icon.png"
-              alt="Facebook icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/linkedin-icon.png"
-              alt="Linkedin icon"
-            />
-          </a>
-          <a href="/">
-            <HeroSocial
-              src="/assets/images/youtube-icon.png"
-              alt="Youtube icon"
-            />
+          {/* GitHub Button */}
+          <a
+            href="https://github.com/rogergarciapages"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconBrandGithub className="h-16 w-16 hover:text-cyan-600" />{' '}
+            {/* Adjust size and color */}
           </a>
         </>
       }
